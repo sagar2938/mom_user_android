@@ -1,0 +1,266 @@
+[
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout-v16_notification_template_custom_big.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_action.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_default_balloon.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_default_balloon.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_multigeometry_placemarks.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_multigeometry_placemarks.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_amu_webview.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/layout/amu_webview.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_nested_folders.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_nested_folders.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_part_chronometer.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable_notification_bg_low.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_visibility_ground_overlay.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_visibility_ground_overlay.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout-v21_notification_action_tombstone.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable_notification_tile_bg.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_nested_multigeometry.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_nested_multigeometry.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable_notification_icon_background.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_big_media.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/57a9153e7afe4850741635935f7ff3e8/media-1.0.0/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_media_custom.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/57a9153e7afe4850741635935f7ff3e8/media-1.0.0/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_ground_overlay.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_ground_overlay.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_draw_order_ground_overlay.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_draw_order_ground_overlay.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_media_action.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/57a9153e7afe4850741635935f7ff3e8/media-1.0.0/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_cdata.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_cdata.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-v21_notification_action_background.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_unsupported.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_unsupported.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/57a9153e7afe4850741635935f7ff3e8/media-1.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_lines_media.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/57a9153e7afe4850741635935f7ff3e8/media-1.0.0/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_amu_bubble_mask.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/drawable-xhdpi-v4/amu_bubble_mask.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout-v21_notification_action.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_action_tombstone.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_amu_bubble_shadow.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/drawable-xhdpi-v4/amu_bubble_shadow.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_media.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/57a9153e7afe4850741635935f7ff3e8/media-1.0.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_poly_style_boolean_numeric.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_poly_style_boolean_numeric.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_document_nest.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_document_nest.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable_notification_bg.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_icon_group.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_poly_style_boolean_alpha.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_poly_style_boolean_alpha.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_media_cancel_action.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/57a9153e7afe4850741635935f7ff3e8/media-1.0.0/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_extended_data.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_extended_data.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_big_media_custom.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/57a9153e7afe4850741635935f7ff3e8/media-1.0.0/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout-v21_notification_template_custom_big.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_part_time.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_multiple_placemarks.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_multiple_placemarks.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_amu_bubble_shadow.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/drawable-xxhdpi-v4/amu_bubble_shadow.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_basic_folder.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_basic_folder.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_inline_style.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_inline_style.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_amu_text_bubble.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/layout/amu_text_bubble.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout-v21_notification_template_icon_group.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_basic_placemark.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_basic_placemark.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_amu_info_window.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/layout/amu_info_window.xml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_ballon_gx_prefix.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_ballon_gx_prefix.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_amu_bubble_mask.9.png.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/drawable-xxhdpi-v4/amu_bubble_mask.9.png"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_ground_overlay_color.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_ground_overlay_color.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/raw_amu_unknwown_folder.kml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/858591d3c28723920cec4120e56a83d1/jetified-android-maps-utils-0.5/res/raw/amu_unknwown_folder.kml"
+    },
+    {
+        "merged": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/res/merged/androidTest/debug/layout_notification_template_big_media_narrow.xml.flat",
+        "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/57a9153e7afe4850741635935f7ff3e8/media-1.0.0/res/layout/notification_template_big_media_narrow.xml"
+    }
+]

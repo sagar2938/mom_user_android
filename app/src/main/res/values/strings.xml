@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">MOM</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Search</string>
+    <string name="title_notifications">Profile</string>
+    <string name="hint_phone">Enter Mobile No.</string>
+    <string name="already_user_login">Already User? Login</string>
+    <string name="new_user_sign_up_here">New User? Sign up here</string>
+    <string name="signup">SignUp</string>
+    <string name="enter_verification_code">Enter verification code</string>
+    <string name="otp">OTP</string>
+    <string name="we_have_sent_you_a_4_digit_verification_code">We have sent you a 4 digit verification code</string>
+
+    <string name="facebook_app_id">570210236929838</string>
+    <string name="fb_login_protocol_scheme">fb570210236929838</string>
+
+
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_view">MainActivityView</string>
+    <string name="search_hint">Search for your drivers and cars</string>
+    <string name="dialog_text">Do you have access to your old mobile number?</string>
+    <string name="dialog_title">Confirmation</string>
+    <string name="switch_dialog_title">Request registered</string>
+    <string name="switch_dialog_message">Your request has been registered.You will recieve your acount
+                    statement for the previous day in your inbox by 10AM everyday</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="car_detail">Please enter the car details you want to audit/attach</string>
+    <string name="title_activity_track">TrackActivity</string>
+    <string name="title_activity_operator_profile">OperatorProfileActivity</string>
+    <string name="opertr_profile_address">delhi, Delhi, delhi  New Delhi-560071 Delhi India</string>
+    <string name="aadhar_doc"><b>1</b>.I hereby agree &amp;amp give consent to ANI Technologies Private Limited(ANI)
+                                to collect,store &amp; share copies of my Aadhaar card (includeing information extracted from the same)
+                               with third parties for onboarding,background verification with various goverment
+    authorities &amp; third party vendors.\n\n
+        <b>2</b>.I permit ANI to retain &amp;apos store copies of my Aadhaar card for as long as it is required to fulfil the purpose mentioned in(1) above.\n\n
+
+        <b>3</b>.I understand that ANI will comply with all confidentiality &amp; security requirements for collection,storage &amp; sharing of copies of my Aadhaar card &amp; any information extracted therefrom.
+
+    In the event you do not want to proceed with this and you would like to submit an additional/alternative proof for your identity information for the above
+    purpose ,please press cancel and each out to ANI customer care.</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <string-array name="state">
+        <item>Delhi</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>India</item>
+    </string-array>
+
+
+    <string name="simple_direction">Simple Direction</string>
+    <string name="transit_direction">Transit Direction</string>
+    <string name="alternative_direction">Alternative Direction</string>
+    <string name="waypoints_direction">Waypoints Direction</string>
+    <string name="request_direction">Request Direction</string>
+    <string name="success_with_status">Success with status : %1$s</string>
+    <string name="direction_requesting">Direction Requesting...</string>
+    <string name="success">Success</string>
+
+
+    <string name="button_place_picker">Place Picker</string>
+    <string name="button_current_place">Current Place</string>
+    <string name="button_autocomplete">Autocomplete</string>
+    <string name="google_play_services_error">Google Play Services is not available</string>
+    <string name="location_permission_error">Location permission required</string>
+    <string name="autocomplete">Autocomplete</string>
+    <string name="place_picker">Place Picker</string>
+    <string name="autocomplete_fragment">Autocomplete Fragment</string>
+
+    <string-array name="reason">
+        <item>Issue with on going order</item>
+        <item>Issue with past or delivered order</item>
+        <item>Payment issue with my order</item>
+        <item>Promo code did not apply for the on going order</item>
+        <item>Change the delivery address of the current order</item>
+        <item>Raise a complaint about delivery partner</item>
+        <item>Wrong food delivered</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

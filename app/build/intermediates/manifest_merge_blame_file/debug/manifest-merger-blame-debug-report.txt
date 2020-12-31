@@ -1,0 +1,793 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="mom.com"
+4    android:versionCode="34"
+5    android:versionName="1.0.34" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:5:5-81
+11-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.CALL_PHONE" />
+12-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:6:5-69
+12-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:6:22-66
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:7:5-67
+13-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:8:5-81
+14-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:9:5-79
+15-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:10:5-65
+16-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:10:22-62
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:11:5-80
+17-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:11:22-77
+18    <uses-permission android:name="android.permission.CALL_PHONE" />
+18-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:6:5-69
+18-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:6:22-66
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:13:5-79
+19-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:13:22-76
+20
+21    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:25:5-27:36
+23        android:name="android.hardware.camera"
+23-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:26:9-47
+24        android:required="false" />
+24-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:27:9-33
+25    <uses-feature
+25-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:28:5-30:36
+26        android:name="android.hardware.camera.front"
+26-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:29:9-53
+27        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+27-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:30:9-33
+28    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:33:5-35:36
+30        android:name="android.hardware.camera.autofocus"
+30-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:34:9-57
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:35:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:36:5-38:36
+33        android:name="android.hardware.camera.flash"
+33-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:37:9-53
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:38:9-33
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:39:5-41:36
+36        android:name="android.hardware.screen.landscape"
+36-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:40:9-57
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:41:9-33
+38    <uses-feature
+38-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:42:5-44:36
+39        android:name="android.hardware.wifi"
+39-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:43:9-45
+40        android:required="false" />
+40-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:44:9-33
+41
+42    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+42-->[com.google.android.libraries.places:places-compat:2.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/515cbdd57992ca562b40cf4c40d7cf53/places-compat-2.0.0/AndroidManifest.xml:10:5-76
+42-->[com.google.android.libraries.places:places-compat:2.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/515cbdd57992ca562b40cf4c40d7cf53/places-compat-2.0.0/AndroidManifest.xml:10:22-73
+43
+44    <uses-feature
+44-->[com.google.android.gms:play-services-maps:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/e1715c636264c4009768987952da7d5f/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+45        android:glEsVersion="0x00020000"
+45-->[com.google.android.gms:play-services-maps:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/e1715c636264c4009768987952da7d5f/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+46        android:required="true" />
+46-->[com.google.android.gms:play-services-maps:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/e1715c636264c4009768987952da7d5f/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+47
+48    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+48-->[com.google.android.gms:play-services-measurement-api:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c9b6a6872083beec9e806e2270ff6383/jetified-play-services-measurement-api-16.4.0/AndroidManifest.xml:24:5-68
+48-->[com.google.android.gms:play-services-measurement-api:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c9b6a6872083beec9e806e2270ff6383/jetified-play-services-measurement-api-16.4.0/AndroidManifest.xml:24:22-65
+49    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+49-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:26:5-82
+49-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:26:22-79
+50    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+50-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:26:5-110
+50-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:26:22-107
+51
+52    <application
+52-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:15:5-157:19
+53        android:name="mom.com.network.ThisApp"
+53-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:16:9-40
+54        android:allowBackup="true"
+54-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:17:9-35
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/AndroidManifest.xml:22:18-86
+56        android:debuggable="true"
+57        android:icon="@mipmap/ic_launcher"
+57-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:18:9-43
+58        android:label="@string/app_name"
+58-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:19:9-41
+59        android:largeHeap="true"
+59-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:20:9-33
+60        android:roundIcon="@mipmap/ic_launcher"
+60-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:21:9-48
+61        android:supportsRtl="true"
+61-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:22:9-35
+62        android:testOnly="true"
+63        android:theme="@style/AppTheme.NoActionBar" >
+63-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:23:9-52
+64        <meta-data
+64-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:24:9-107
+65            android:name="com.facebook.sdk.ApplicationId"
+65-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:24:20-65
+66            android:value="@string/facebook_app_id" />
+66-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:24:66-105
+67
+68        <activity android:name="mom.com.activities.ErrorActivity" />
+68-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:25:9-71
+68-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:25:19-59
+69        <activity android:name="mom.com.paytmpayment.PaytmDemoActivity" />
+69-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:26:9-68
+69-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:26:19-65
+70        <activity android:name="mom.com.activities.HistoryActivity" />
+70-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:27:9-64
+70-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:27:19-61
+71        <activity android:name="mom.com.activities.AddressBookActivity" />
+71-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:28:9-68
+71-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:28:19-65
+72        <activity
+72-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:29:9-37:20
+73            android:name="mom.com.activities.SplashActivity"
+73-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:30:13-54
+74            android:theme="@style/AppTheme.NoActionBar" >
+74-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:31:13-56
+75            <intent-filter>
+75-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:32:13-36:29
+76                <action android:name="android.intent.action.MAIN" />
+76-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:33:17-69
+76-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:33:25-66
+77
+78                <category android:name="android.intent.category.LAUNCHER" />
+78-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:35:17-77
+78-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:35:27-74
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:38:9-41:52
+82            android:name="com.paytm.pgsdk.PaytmPGActivity"
+82-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:39:13-59
+83            android:configChanges="keyboardHidden|orientation|keyboard"
+83-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:40:13-72
+84            android:screenOrientation="portrait"
+84-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:41:13-49
+85            android:theme="@style/AppTheme" />
+85-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:16:13-44
+86        <activity android:name="mom.com.paytmpayment.checksum" />
+86-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:42:9-59
+86-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:42:19-56
+87        <activity android:name="mom.com.activities.kt.PlacePickerActivity" />
+87-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:43:9-71
+87-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:43:19-68
+88        <activity android:name="mom.com.activities.EmailActivity" />
+88-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:44:9-62
+88-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:44:19-59
+89        <activity android:name="mom.com.activities.ContactAdminActivity" />
+89-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:45:9-69
+89-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:45:19-66
+90        <activity android:name="mom.com.activities.PromoDetailActivity" />
+90-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:46:9-68
+90-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:46:19-65
+91        <activity android:name="mom.com.activities.OfferListActivity" />
+91-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:47:9-66
+91-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:47:19-63
+92        <activity android:name="mom.com.activities.TestActivity" />
+92-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:48:9-61
+92-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:48:19-58
+93        <activity android:name="mom.com.activities.ContactDetailActivity" />
+93-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:49:9-70
+93-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:49:19-67
+94        <activity android:name="mom.com.activities.PaymentTypeActivity" />
+94-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:50:9-68
+94-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:50:19-65
+95        <activity android:name="mom.com.favorite.FavoriteActivity" />
+95-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:51:9-63
+95-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:51:19-60
+96        <activity android:name="mom.com.paymentoptions.PaymentOptions" />
+96-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:52:9-67
+96-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:52:19-64
+97        <activity android:name="mom.com.bookmark.BookmarkActivity" />
+97-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:53:9-63
+97-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:53:19-60
+98        <activity android:name="mom.com.otherpages.TermsConditionActivity" />
+98-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:54:9-71
+98-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:54:19-68
+99        <activity android:name="mom.com.otherpages.ContactUsActivity" />
+99-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:55:9-66
+99-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:55:19-63
+100        <activity android:name="mom.com.otherpages.AboutUsActivity" />
+100-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:56:9-64
+100-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:56:19-61
+101        <activity android:name="mom.com.otherpages.RateReviewActivity" />
+101-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:57:9-67
+101-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:57:19-64
+102        <activity android:name="mom.com.otherpages.NotificationsActivity" />
+102-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:58:9-70
+102-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:58:19-67
+103        <activity android:name="mom.com.foodorders.OrderHistory" />
+103-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:59:9-61
+103-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:59:19-58
+104        <activity android:name="mom.com.foodorders.CancelOrderActivity" />
+104-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:60:9-68
+104-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:60:19-65
+105        <activity android:name="mom.com.foodorders.TrackOrderActivity" />
+105-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:61:9-67
+105-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:61:19-64
+106        <activity android:name="mom.com.foodorders.OrderFoodDetailsActivity" />
+106-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:62:9-73
+106-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:62:19-70
+107        <activity android:name="mom.com.makepayment.CODActivity" />
+107-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:63:9-61
+107-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:63:19-58
+108        <activity android:name="mom.com.makepayment.PaymentGetwayActivity" />
+108-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:64:9-71
+108-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:64:19-68
+109        <activity android:name="mom.com.makepayment.PaymentHistoryActivity" />
+109-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:65:9-72
+109-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:65:19-69
+110        <activity android:name="mom.com.cartpage.ProceedPaymentActivity" />
+110-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:66:9-69
+110-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:66:19-66
+111        <activity android:name="mom.com.cartpage.AddDeliveryActivty" />
+111-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:67:9-65
+111-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:67:19-62
+112        <activity android:name="mom.com.cartpage.BillDetailsActivity" />
+112-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:68:9-66
+112-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:68:19-63
+113        <activity android:name="mom.com.cartpage.OrderDetailsCartActivity" />
+113-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:69:9-71
+113-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:69:19-68
+114        <activity
+114-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:70:9-72:57
+115            android:name="mom.com.activities.ProfileActivity"
+115-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:71:13-55
+116            android:windowSoftInputMode="stateHidden" />
+116-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:72:13-54
+117        <activity android:name="mom.com.activities.ApplyCoupons" />
+117-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:73:9-61
+117-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:73:19-58
+118        <activity
+118-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:74:9-76:59
+119            android:name="mom.com.activities.MomItemDetailActivity"
+119-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:75:13-61
+120            android:theme="@style/AppTheme.NoActionBar" />
+120-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:76:13-56
+121        <activity
+121-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:77:9-80:57
+122            android:name="mom.com.activities.OtpActivity"
+122-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:78:13-51
+123            android:theme="@style/AppTheme.NoActionBar"
+123-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:79:13-56
+124            android:windowSoftInputMode="stateHidden" />
+124-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:80:13-54
+125        <activity android:name="mom.com.activities.CartActivity" />
+125-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:81:9-61
+125-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:81:19-58
+126        <activity
+126-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:82:9-84:59
+127            android:name="mom.com.activities.HomePageActivity"
+127-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:83:13-56
+128            android:theme="@style/AppTheme.NoActionBar" />
+128-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:84:13-56
+129        <activity
+129-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:85:9-88:57
+130            android:name="mom.com.activities.LoginActivity"
+130-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:86:13-53
+131            android:theme="@style/AppTheme.NoActionBar"
+131-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:87:13-56
+132            android:windowSoftInputMode="stateHidden" />
+132-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:88:13-54
+133        <activity
+133-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:89:9-92:57
+134            android:name="mom.com.activities.MainActivity"
+134-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:90:13-52
+135            android:label="@string/title_activity_main"
+135-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:91:13-56
+136            android:windowSoftInputMode="stateHidden" />
+136-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:92:13-54
+137        <activity android:name="mom.com.activities.EditProfileActivity" />
+137-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:93:9-68
+137-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:93:19-65
+138        <activity android:name="mom.com.activities.address.AddAddressActivity" />
+138-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:94:9-75
+138-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:94:19-72
+139        <activity
+139-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:95:9-97:59
+140            android:name="mom.com.activities.SignUpActivity"
+140-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:96:13-54
+141            android:theme="@style/AppTheme.NoActionBar" />
+141-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:97:13-56
+142        <activity android:name="mom.com.activities.TrackingActivity" />
+142-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:98:9-65
+142-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:98:19-62
+143        <activity android:name="mom.com.activities.kt.SimpleDirectionActivity" />
+143-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:99:9-75
+143-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:99:19-72
+144        <activity android:name="mom.com.activities.AddressPickerActivity2" />
+144-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:100:9-71
+144-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:100:19-68
+145        <activity android:name="mom.com.activities.AddressListActivity" /> <!-- car activity -->
+145-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:101:9-68
+145-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:101:19-65
+146        <meta-data
+146-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:102:9-104:71
+147            android:name="com.google.android.geo.API_KEY"
+147-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:103:13-58
+148            android:value="AIzaSyAnEGiYgCXVLPiKIpw5YVKuiBs8x6VYlB8" />
+148-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:104:13-68
+149
+150        <provider
+151            android:name="androidx.core.content.FileProvider"
+151-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:107:13-62
+152            android:authorities="mom.com.provider"
+152-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:108:13-60
+153            android:exported="false"
+153-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:109:13-37
+154            android:grantUriPermissions="true" >
+154-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:110:13-47
+155            <meta-data
+155-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:111:13-113:58
+156                android:name="android.support.FILE_PROVIDER_PATHS"
+156-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:112:17-67
+157                android:resource="@xml/provider_paths" />
+157-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:113:17-55
+158        </provider>
+159
+160        <receiver
+160-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:116:9-122:20
+161            android:name="mom.com.utils.SMSReceiver"
+161-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:117:13-46
+162            android:exported="true" >
+162-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:118:13-36
+163            <intent-filter>
+163-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:119:13-121:29
+164                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+164-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:120:17-94
+164-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:120:25-91
+165            </intent-filter>
+166        </receiver>
+167
+168        <service
+168-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:124:9-126:40
+169            android:name="mom.com.activities.address.FetchAddressIntentService"
+169-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:125:13-73
+170            android:exported="false" />
+170-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:126:13-37
+171        <service android:name="mom.com.network.ApiCallService" />
+171-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:127:9-59
+171-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:127:18-56
+172        <!--
+173        <service
+174            android:name=".firebase_service.MyFirebaseInstanceIDService"
+175            android:exported="false">
+176            <intent-filter>
+177                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+178            </intent-filter>
+179        </service>
+180        -->
+181        <service
+181-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:135:9-142:19
+182            android:name="mom.com.firebase_service.MyFirebaseMessagingService"
+182-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:136:13-72
+183            android:enabled="true"
+183-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:137:13-35
+184            android:exported="true" >
+184-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:138:13-36
+185            <intent-filter>
+185-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:139:13-141:29
+186                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+186-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:140:17-78
+186-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:140:25-75
+187            </intent-filter>
+188        </service>
+189        <service android:name="mom.com.utils.GPSService" />
+189-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:143:9-53
+189-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:143:18-50
+190        <service
+190-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:144:9-151:19
+191            android:name="mom.com.service.MyFirebaseMessagingService"
+191-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:145:13-63
+192            android:enabled="true"
+192-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:146:13-35
+193            android:exported="true" >
+193-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:147:13-36
+194            <intent-filter>
+194-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:139:13-141:29
+195                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+195-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:140:17-78
+195-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:140:25-75
+196            </intent-filter>
+197        </service>
+198        <service
+198-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:152:9-154:40
+199            android:name="mom.com.service.BackgroundService"
+199-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:153:13-54
+200            android:exported="false" />
+200-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:154:13-37
+201
+202        <activity android:name="mom.com.activities.OrderPlacedActivity" />
+202-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:156:9-68
+202-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:156:19-65
+203        <activity
+203-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:47:9-53:63
+204            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+204-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:48:13-74
+205            android:clearTaskOnLaunch="true"
+205-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:49:13-45
+206            android:screenOrientation="sensorLandscape"
+206-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:50:13-56
+207            android:stateNotNeeded="true"
+207-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:51:13-42
+208            android:theme="@style/zxing_CaptureTheme"
+208-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:52:13-54
+209            android:windowSoftInputMode="stateAlwaysHidden" />
+209-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/637e4d798d19228654db87b723c6c12f/jetified-zxing-android-embedded-3.6.0/AndroidManifest.xml:53:13-60
+210        <activity
+210-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:30:9-33:66
+211            android:name="com.facebook.FacebookActivity"
+211-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:31:13-57
+212            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+212-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:32:13-96
+213            android:theme="@style/com_facebook_activity_theme" />
+213-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:33:13-63
+214        <activity android:name="com.facebook.CustomTabMainActivity" />
+214-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:9-71
+214-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:34:19-68
+215        <activity
+215-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:35:9-49:20
+216            android:name="com.facebook.CustomTabActivity"
+216-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:36:13-58
+217            android:exported="true" >
+217-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:37:13-36
+218            <intent-filter>
+218-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:39:13-48:29
+219                <action android:name="android.intent.action.VIEW" />
+219-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:40:17-69
+219-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:40:25-66
+220
+221                <category android:name="android.intent.category.DEFAULT" />
+221-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:42:17-76
+221-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:42:27-73
+222                <category android:name="android.intent.category.BROWSABLE" />
+222-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:43:17-78
+222-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:43:27-75
+223
+224                <data
+224-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:45:17-47:50
+225                    android:host="cct.mom.com"
+225-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:46:21-56
+226                    android:scheme="fbconnect" />
+226-->[com.facebook.android:facebook-common:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/5a0ae545d6c87ea0d72f01aae4d09b25/jetified-facebook-common-5.15.3/AndroidManifest.xml:47:21-47
+227            </intent-filter>
+228        </activity> <!-- Autocomplete -->
+229        <activity
+229-->[com.google.android.libraries.places:places-compat:2.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/515cbdd57992ca562b40cf4c40d7cf53/places-compat-2.0.0/AndroidManifest.xml:16:9-23:20
+230            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+230-->[com.google.android.libraries.places:places-compat:2.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/515cbdd57992ca562b40cf4c40d7cf53/places-compat-2.0.0/AndroidManifest.xml:17:13-91
+231            android:exported="false"
+231-->[com.google.android.libraries.places:places-compat:2.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/515cbdd57992ca562b40cf4c40d7cf53/places-compat-2.0.0/AndroidManifest.xml:18:13-37
+232            android:hardwareAccelerated="true"
+232-->[com.google.android.libraries.places:places-compat:2.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/515cbdd57992ca562b40cf4c40d7cf53/places-compat-2.0.0/AndroidManifest.xml:19:13-47
+233            android:label="@string/places_autocomplete_label"
+233-->[com.google.android.libraries.places:places-compat:2.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/515cbdd57992ca562b40cf4c40d7cf53/places-compat-2.0.0/AndroidManifest.xml:20:13-62
+234            android:theme="@style/PlacesAutocompleteThemeOverlay"
+234-->[com.google.android.libraries.places:places-compat:2.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/515cbdd57992ca562b40cf4c40d7cf53/places-compat-2.0.0/AndroidManifest.xml:21:13-66
+235            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+235-->[com.google.android.libraries.places:places-compat:2.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/515cbdd57992ca562b40cf4c40d7cf53/places-compat-2.0.0/AndroidManifest.xml:22:13-71
+236        </activity>
+237
+238        <service
+238-->[com.google.firebase:firebase-storage:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c72442d34613bf757cea399080faa431/jetified-firebase-storage-16.1.0/AndroidManifest.xml:30:9-34:19
+239            android:name="com.google.firebase.components.ComponentDiscoveryService"
+239-->[com.google.firebase:firebase-storage:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c72442d34613bf757cea399080faa431/jetified-firebase-storage-16.1.0/AndroidManifest.xml:30:18-89
+240            android:exported="false" >
+240-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:35:13-37
+241            <meta-data
+241-->[com.google.firebase:firebase-storage:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c72442d34613bf757cea399080faa431/jetified-firebase-storage-16.1.0/AndroidManifest.xml:31:13-33:85
+242                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+242-->[com.google.firebase:firebase-storage:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c72442d34613bf757cea399080faa431/jetified-firebase-storage-16.1.0/AndroidManifest.xml:32:17-107
+243                android:value="com.google.firebase.components.ComponentRegistrar" />
+243-->[com.google.firebase:firebase-storage:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c72442d34613bf757cea399080faa431/jetified-firebase-storage-16.1.0/AndroidManifest.xml:33:17-82
+244            <meta-data
+244-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:36:13-38:85
+245                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+245-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:37:17-109
+246                android:value="com.google.firebase.components.ComponentRegistrar" />
+246-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:38:17-82
+247            <meta-data
+247-->[com.google.firebase:firebase-database:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/adc490a7bd959ad173d438635a039062/jetified-firebase-database-16.1.0/AndroidManifest.xml:30:13-32:85
+248                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+248-->[com.google.firebase:firebase-database:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/adc490a7bd959ad173d438635a039062/jetified-firebase-database-16.1.0/AndroidManifest.xml:31:17-109
+249                android:value="com.google.firebase.components.ComponentRegistrar" />
+249-->[com.google.firebase:firebase-database:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/adc490a7bd959ad173d438635a039062/jetified-firebase-database-16.1.0/AndroidManifest.xml:32:17-82
+250            <meta-data
+250-->[com.google.android.gms:play-services-measurement-api:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c9b6a6872083beec9e806e2270ff6383/jetified-play-services-measurement-api-16.4.0/AndroidManifest.xml:30:13-32:85
+251                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+251-->[com.google.android.gms:play-services-measurement-api:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c9b6a6872083beec9e806e2270ff6383/jetified-play-services-measurement-api-16.4.0/AndroidManifest.xml:31:17-139
+252                android:value="com.google.firebase.components.ComponentRegistrar" />
+252-->[com.google.android.gms:play-services-measurement-api:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c9b6a6872083beec9e806e2270ff6383/jetified-play-services-measurement-api-16.4.0/AndroidManifest.xml:32:17-82
+253            <meta-data
+253-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:32:13-34:85
+254                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+254-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:33:17-96
+255                android:value="com.google.firebase.components.ComponentRegistrar" />
+255-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:34:17-82
+256        </service>
+257
+258        <activity
+258-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:24:9-31:50
+259            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+259-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:25:13-85
+260            android:excludeFromRecents="true"
+260-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:26:13-46
+261            android:exported="true"
+261-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:27:13-36
+262            android:launchMode="singleTask"
+262-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:28:13-44
+263            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+263-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:29:13-102
+264            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+264-->[com.google.firebase:firebase-auth:16.2.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/815ec3d0812e1e09034cf9cb1281406e/jetified-firebase-auth-16.2.0/AndroidManifest.xml:30:13-72
+265        <!--
+266             FirebaseMessagingService performs security checks at runtime,
+267             but set to not exported to explicitly avoid allowing another app to call it.
+268        -->
+269        <service
+269-->[com.google.firebase:firebase-messaging:17.5.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/287d7c9e8468e6969f43fd5fa78397af/jetified-firebase-messaging-17.5.0/AndroidManifest.xml:28:9-34:19
+270            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+270-->[com.google.firebase:firebase-messaging:17.5.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/287d7c9e8468e6969f43fd5fa78397af/jetified-firebase-messaging-17.5.0/AndroidManifest.xml:29:13-82
+271            android:exported="true" >
+271-->[com.google.firebase:firebase-messaging:17.5.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/287d7c9e8468e6969f43fd5fa78397af/jetified-firebase-messaging-17.5.0/AndroidManifest.xml:30:13-36
+272            <intent-filter android:priority="-500" >
+272-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:139:13-141:29
+273                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+273-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:140:17-78
+273-->/code_base/mom_new/mom_user_android/app/src/main/AndroidManifest.xml:140:25-75
+274            </intent-filter>
+275        </service>
+276
+277        <activity
+277-->[com.google.android.gms:play-services-auth:16.0.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c52a92c5fc6b7360ee19bf9e9e4e1321/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+278            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+278-->[com.google.android.gms:play-services-auth:16.0.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c52a92c5fc6b7360ee19bf9e9e4e1321/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+279            android:excludeFromRecents="true"
+279-->[com.google.android.gms:play-services-auth:16.0.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c52a92c5fc6b7360ee19bf9e9e4e1321/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+280            android:exported="false"
+280-->[com.google.android.gms:play-services-auth:16.0.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c52a92c5fc6b7360ee19bf9e9e4e1321/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+281            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+281-->[com.google.android.gms:play-services-auth:16.0.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c52a92c5fc6b7360ee19bf9e9e4e1321/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+282        <!--
+283            Service handling Google Sign-In user revocation. For apps that do not integrate with
+284            Google Sign-In, this service will never be started.
+285        -->
+286        <service
+286-->[com.google.android.gms:play-services-auth:16.0.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c52a92c5fc6b7360ee19bf9e9e4e1321/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+287            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+287-->[com.google.android.gms:play-services-auth:16.0.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c52a92c5fc6b7360ee19bf9e9e4e1321/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+288            android:exported="true"
+288-->[com.google.android.gms:play-services-auth:16.0.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c52a92c5fc6b7360ee19bf9e9e4e1321/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+289            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+289-->[com.google.android.gms:play-services-auth:16.0.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c52a92c5fc6b7360ee19bf9e9e4e1321/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+290        <uses-library
+290-->[com.google.android.gms:play-services-maps:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/e1715c636264c4009768987952da7d5f/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+291            android:name="org.apache.http.legacy"
+291-->[com.google.android.gms:play-services-maps:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/e1715c636264c4009768987952da7d5f/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+292            android:required="false" />
+292-->[com.google.android.gms:play-services-maps:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/e1715c636264c4009768987952da7d5f/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+293        <!--
+294             Receives GooglePlay execution requests and forwards them to the
+295             appropriate internal service.
+296        -->
+297        <service
+297-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0b582f9d9a8149e338a10a30f4cf223b/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:32:9-39:19
+298            android:name="com.firebase.jobdispatcher.GooglePlayReceiver"
+298-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0b582f9d9a8149e338a10a30f4cf223b/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:33:13-73
+299            android:exported="true"
+299-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0b582f9d9a8149e338a10a30f4cf223b/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:34:13-36
+300            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+300-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0b582f9d9a8149e338a10a30f4cf223b/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:35:13-93
+301            <intent-filter>
+301-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0b582f9d9a8149e338a10a30f4cf223b/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:36:13-38:29
+302                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+302-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0b582f9d9a8149e338a10a30f4cf223b/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:17-87
+302-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0b582f9d9a8149e338a10a30f4cf223b/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:25-84
+303            </intent-filter>
+304        </service>
+305
+306        <provider
+306-->[com.squareup.picasso:picasso:2.71828] /Users/vbula/.gradle/caches/transforms-2/files-2.1/40eb6b021d6ef474ed64b37df6235355/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+307            android:name="com.squareup.picasso.PicassoProvider"
+307-->[com.squareup.picasso:picasso:2.71828] /Users/vbula/.gradle/caches/transforms-2/files-2.1/40eb6b021d6ef474ed64b37df6235355/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+308            android:authorities="mom.com.com.squareup.picasso"
+308-->[com.squareup.picasso:picasso:2.71828] /Users/vbula/.gradle/caches/transforms-2/files-2.1/40eb6b021d6ef474ed64b37df6235355/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+309            android:exported="false" /> <!-- This is just an Activity for Testing from within src/androidTest -->
+309-->[com.squareup.picasso:picasso:2.71828] /Users/vbula/.gradle/caches/transforms-2/files-2.1/40eb6b021d6ef474ed64b37df6235355/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+310        <activity
+310-->[com.tapadoo.android:alerter:2.0.4] /Users/vbula/.gradle/caches/transforms-2/files-2.1/4a4bfc59f324e0d3baed4e06fd4d9986/jetified-alerter-2.0.4/AndroidManifest.xml:15:9-17:54
+311            android:name="com.tapadoo.alerter.MockActivity"
+311-->[com.tapadoo.android:alerter:2.0.4] /Users/vbula/.gradle/caches/transforms-2/files-2.1/4a4bfc59f324e0d3baed4e06fd4d9986/jetified-alerter-2.0.4/AndroidManifest.xml:16:13-60
+312            android:theme="@style/Theme.AppCompat" />
+312-->[com.tapadoo.android:alerter:2.0.4] /Users/vbula/.gradle/caches/transforms-2/files-2.1/4a4bfc59f324e0d3baed4e06fd4d9986/jetified-alerter-2.0.4/AndroidManifest.xml:17:13-51
+313
+314        <service
+314-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:18:9-20:40
+315            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+315-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:19:13-73
+316            android:exported="false" />
+316-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:20:13-37
+317        <service
+317-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:21:9-23:40
+318            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+318-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:22:13-72
+319            android:exported="false" />
+319-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:23:13-37
+320        <service
+320-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:24:9-27:39
+321            android:name="com.paytm.pgsdk.easypay.utils.EasypayLoaderService"
+321-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:25:13-78
+322            android:enabled="true"
+322-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:26:13-35
+323            android:exported="true" />
+323-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:27:13-36
+324        <service
+324-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:28:9-31:39
+325            android:name="com.paytm.pgsdk.easypay.utils.AnalyticsService"
+325-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:29:13-74
+326            android:enabled="true"
+326-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:30:13-35
+327            android:exported="true" />
+327-->[com.paytm:pgplussdk:1.2.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/f39b161c8aa516c2df5ec706ccbf5d66/jetified-pgplussdk-1.2.3/AndroidManifest.xml:31:13-36
+328
+329        <receiver
+329-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:37:9-44:20
+330            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+330-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:38:13-78
+331            android:exported="true"
+331-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:39:13-36
+332            android:permission="com.google.android.c2dm.permission.SEND" >
+332-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:40:13-73
+333            <intent-filter>
+333-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:41:13-43:29
+334                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+334-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:42:17-81
+334-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:42:25-78
+335            </intent-filter>
+336        </receiver>
+337        <!--
+338             FirebaseInstanceIdService performs security checks at runtime,
+339             no need for explicit permissions despite exported="true"
+340        -->
+341        <service
+341-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:50:9-56:19
+342            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+342-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:51:13-77
+343            android:exported="true" >
+343-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:52:13-36
+344            <intent-filter android:priority="-500" >
+344-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:53:13-55:29
+344-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:53:28-51
+345                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+345-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:54:17-80
+345-->[com.google.firebase:firebase-iid:17.1.1] /Users/vbula/.gradle/caches/transforms-2/files-2.1/01d0ad9e73458d781742f69e090b8eea/jetified-firebase-iid-17.1.1/AndroidManifest.xml:54:25-77
+346            </intent-filter>
+347        </service>
+348
+349        <activity
+349-->[com.google.android.gms:play-services-base:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/abf6045a904d74cd0d155c0e4b96d132/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+350            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+350-->[com.google.android.gms:play-services-base:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/abf6045a904d74cd0d155c0e4b96d132/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+351            android:exported="false"
+351-->[com.google.android.gms:play-services-base:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/abf6045a904d74cd0d155c0e4b96d132/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+352            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+352-->[com.google.android.gms:play-services-base:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/abf6045a904d74cd0d155c0e4b96d132/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+353
+354        <provider
+354-->[com.google.firebase:firebase-common:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0033bc146aa2cdae6ae4815ecd26c536/jetified-firebase-common-16.1.0/AndroidManifest.xml:12:9-16:39
+355            android:name="com.google.firebase.provider.FirebaseInitProvider"
+355-->[com.google.firebase:firebase-common:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0033bc146aa2cdae6ae4815ecd26c536/jetified-firebase-common-16.1.0/AndroidManifest.xml:13:13-77
+356            android:authorities="mom.com.firebaseinitprovider"
+356-->[com.google.firebase:firebase-common:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0033bc146aa2cdae6ae4815ecd26c536/jetified-firebase-common-16.1.0/AndroidManifest.xml:14:13-72
+357            android:exported="false"
+357-->[com.google.firebase:firebase-common:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0033bc146aa2cdae6ae4815ecd26c536/jetified-firebase-common-16.1.0/AndroidManifest.xml:15:13-37
+358            android:initOrder="100" />
+358-->[com.google.firebase:firebase-common:16.1.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/0033bc146aa2cdae6ae4815ecd26c536/jetified-firebase-common-16.1.0/AndroidManifest.xml:16:13-36
+359
+360        <receiver
+360-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:29:9-33:20
+361            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+361-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:30:13-85
+362            android:enabled="true"
+362-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:31:13-35
+363            android:exported="false" >
+363-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:32:13-37
+364        </receiver>
+365        <receiver
+365-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:34:9-42:20
+366            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+366-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:35:13-100
+367            android:enabled="true"
+367-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:36:13-35
+368            android:exported="true"
+368-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:37:13-36
+369            android:permission="android.permission.INSTALL_PACKAGES" >
+369-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:38:13-69
+370            <intent-filter>
+370-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:39:13-41:29
+371                <action android:name="com.android.vending.INSTALL_REFERRER" />
+371-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:40:17-79
+371-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:40:25-76
+372            </intent-filter>
+373        </receiver>
+374
+375        <service
+375-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:44:9-47:40
+376            android:name="com.google.android.gms.measurement.AppMeasurementService"
+376-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:45:13-84
+377            android:enabled="true"
+377-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:46:13-35
+378            android:exported="false" />
+378-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:47:13-37
+379        <service
+379-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:48:9-52:72
+380            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+380-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:49:13-87
+381            android:enabled="true"
+381-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:50:13-35
+382            android:exported="false"
+382-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:51:13-37
+383            android:permission="android.permission.BIND_JOB_SERVICE" />
+383-->[com.google.android.gms:play-services-measurement:16.4.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/c34b2bef9a8533d8897bf7348c4fc318/jetified-play-services-measurement-16.4.0/AndroidManifest.xml:52:13-69
+384
+385        <meta-data
+385-->[com.google.android.gms:play-services-basement:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/6d8854d557fec7460f5d354794a31d77/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+386            android:name="com.google.android.gms.version"
+386-->[com.google.android.gms:play-services-basement:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/6d8854d557fec7460f5d354794a31d77/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+387            android:value="@integer/google_play_services_version" />
+387-->[com.google.android.gms:play-services-basement:17.0.0] /Users/vbula/.gradle/caches/transforms-2/files-2.1/6d8854d557fec7460f5d354794a31d77/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+388        <!--
+389         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+390         with the application context. This config is merged in with the host app's manifest,
+391         but there can only be one provider with the same authority activated at any given
+392         point; so if the end user has two or more different apps that use Facebook SDK, only the
+393         first one will be able to use the provider. To work around this problem, we use the
+394         following placeholder in the authority to identify each host application as if it was
+395         a completely different provider.
+396        -->
+397        <provider
+397-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:39:9-42:40
+398            android:name="com.facebook.internal.FacebookInitProvider"
+398-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:40:13-70
+399            android:authorities="mom.com.FacebookInitProvider"
+399-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:41:13-72
+400            android:exported="false" />
+400-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:42:13-37
+401
+402        <receiver
+402-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:44:9-50:20
+403            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+403-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:45:13-86
+404            android:exported="false" >
+404-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:46:13-37
+405            <intent-filter>
+405-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:47:13-49:29
+406                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+406-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:17-95
+406-->[com.facebook.android:facebook-core:5.15.3] /Users/vbula/.gradle/caches/transforms-2/files-2.1/a1a7e3360c08afc786f7e984ced5d839/jetified-facebook-core-5.15.3/AndroidManifest.xml:48:25-92
+407            </intent-filter>
+408        </receiver>
+409    </application>
+410
+411</manifest>

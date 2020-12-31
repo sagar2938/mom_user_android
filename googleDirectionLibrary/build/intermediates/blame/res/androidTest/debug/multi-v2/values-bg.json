@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/code_base/mom_new/mom_user_android/googleDirectionLibrary/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-bg/values-bg.xml",
+            "map": [
+                {
+                    "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/b07aa7d673a7befee27854b2a85a583e/core-1.0.0/res/values-bg/values-bg.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "302",
+                        "endColumns": "100",
+                        "endOffsets": "398"
+                    }
+                },
+                {
+                    "source": "/Users/vbula/.gradle/caches/transforms-2/files-2.1/64caaa93ac58b317bbd95e6f1dfb0b21/jetified-play-services-basement-11.6.0/res/values-bg/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "196",
+                        "endOffsets": "481"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "196",
+                        "endOffsets": "297"
+                    }
+                }
+            ]
+        }
+    ]
+}

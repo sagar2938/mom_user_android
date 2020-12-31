@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/dp_3"
+            app:srcCompat="@drawable/selected_dot"
+            tools:ignore="VectorDrawableCompat"
+            app:cardCornerRadius="@dimen/dp_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" >
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_60"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_food" />
+        </androidx.cardview.widget.CardView>
+
+
+       <LinearLayout
+           android:id="@+id/main_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_toEndOf="@+id/radioButton5"
+           android:layout_toStartOf="@+id/add_button"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/itemName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="8dp"
+               android:layout_marginLeft="8dp"
+               android:layout_marginTop="@dimen/dp_5"
+               android:text="Malai Chaap"
+               android:textColor="@color/black"
+               android:textSize="@dimen/dp_16"/>
+
+           <TextView
+               android:id="@+id/itemDescription"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="8dp"
+               android:layout_marginTop="@dimen/dp_4"
+               android:layout_marginLeft="8dp"
+               android:layout_marginBottom="@dimen/dp_5"
+               android:text="description"
+               android:textSize="12sp" />
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="@dimen/dp_30">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="8dp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_marginTop="4dp"
+                 android:text="₹"
+                 android:textStyle="bold"
+                 android:textColor="@color/black"
+                 android:textSize="12sp"/>
+             <TextView
+                 android:id="@+id/price"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="4dp"
+                 android:text="100"
+                 android:textStyle="bold"
+                 android:textColor="@color/black"
+                 android:textSize="12sp"/>
+
+         </LinearLayout>
+
+
+       </LinearLayout>
+
+
+
+       <LinearLayout
+           android:id="@+id/add_button"
+           android:layout_width="@dimen/dp_75"
+           android:orientation="vertical"
+           android:layout_gravity="center"
+           android:layout_alignParentRight="true"
+           android:gravity="center"
+           android:layout_height="wrap_content">
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               android:layout_gravity="end"
+               app:cardCornerRadius="@dimen/dp_5"
+               android:id="@+id/cancel"
+               android:layout_marginRight="@dimen/dp_10"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="-3dp"
+                   android:text=" x "></TextView>
+
+           </androidx.cardview.widget.CardView>
+           <LinearLayout
+               android:id="@+id/linearLayout2"
+               android:layout_width="70dp"
+               android:layout_marginTop="@dimen/dp_5"
+               android:layout_height="25dp"
+               android:layout_gravity="center"
+               android:background="@drawable/rounded_border_green_new"
+               android:gravity="center"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/minus"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="-"
+                   android:textColor="@color/white"
+                   android:textSize="16sp"
+                   android:visibility="visible" />
+
+               <TextView
+                   android:id="@+id/quantity"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:background="@color/colorPrimary"
+                   android:gravity="center"
+                   android:text="3"
+                   android:textColor="@color/white"
+                   android:textSize="10sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/plus"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_marginRight="2dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="+"
+                   android:textColor="@color/white"
+                   android:textSize="14sp" />
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

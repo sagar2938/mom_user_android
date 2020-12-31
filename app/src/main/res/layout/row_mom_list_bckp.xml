@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/divider_menu"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+        <!-- <android.support.v7.widget.CardView
+             android:layout_width="match_parent"
+             app:cardUseCompatPadding="true"
+             android:layout_height="wrap_content">-->
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:background="@color/white"
+            android:id="@+id/mainLayout"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="7dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            app:cardCornerRadius="5dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/momImage"
+                                android:layout_width="match_parent"
+                                android:src="@drawable/imagesss"
+                                android:layout_marginRight="-5dp"
+                                android:layout_height="90dp"
+                                android:scaleType="centerCrop" />
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="6"
+                        android:orientation="vertical">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/momTittle"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="7"
+                                android:gravity="center|left"
+                                android:text="Roll Mania"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="30dp"
+                                android:layout_height="22dp"
+                                android:layout_marginRight="2dp"
+                                android:background="@drawable/primary_bg"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:text="4.2"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:visibility="invisible"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@color/divider_menu"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/description"/>
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+
+                                android:text="200 per person"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:visibility="invisible"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@color/divider_menu"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/clock"
+                                android:tint="@color/colorPrimary"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:layout_marginLeft="3dp"
+                                android:text=" Time : "/>
+                            <TextView
+                                android:id="@+id/time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:layout_marginLeft="3dp"
+                                android:text="20-30 Mins"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_menu"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="@dimen/dp_5"
+                app:cardCornerRadius="@dimen/dp_10"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top Rated MOM"
+                        android:textSize="@dimen/dp_16"
+                        android:layout_margin="@dimen/dp_10"
+                        />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:id="@+id/recyclerView"/>
+
+                    <TextView
+                        android:id="@+id/shopName"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:textSize="@dimen/dp_20"
+                        android:text="Shop Name"/>
+
+                    <TextView
+                        android:id="@+id/addressTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:text="address"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:rating="4"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/openTime"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:textSize="@dimen/dp_16"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:gravity="end"
+                            android:text="Open 08:00 AM"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <!--</android.support.v7.widget.CardView>-->
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginTop="@dimen/dp_25">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/divider_menu"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".4">
+
+                        <LinearLayout
+                            android:id="@+id/home"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/homeBar"
+                                android:layout_marginBottom="@dimen/dp_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_3"
+                                android:orientation="horizontal" />
+
+                            <LinearLayout
+                               android:layout_width="match_parent"
+                               android:orientation="vertical"
+                               android:layout_gravity="center"
+                               android:gravity="center"
+                               android:layout_weight="1"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                   android:tint="@color/colorPrimary"
+                                   android:id="@+id/homeIcon"
+                                   android:layout_width="@dimen/dp_25"
+                                   android:layout_height="@dimen/dp_25"
+                                   android:src="@drawable/home" />
+
+                               <TextView
+                                   android:id="@+id/homeTxt"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginTop="@dimen/dp_5"
+                                   android:text="Home"
+                                   android:textColor="#050505"
+                                   android:textSize="@dimen/dp_12" />
+
+                           </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/search"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/searchBar"
+                                android:layout_marginBottom="@dimen/dp_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_3"
+                                android:orientation="horizontal" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:tint="@color/colorPrimary"
+                                android:id="@+id/searchIcon"
+                                android:layout_width="@dimen/dp_25"
+                                android:layout_height="@dimen/dp_25"
+                                android:src="@drawable/search" />
+
+                            <TextView
+                                android:id="@+id/searchTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:text="Search"
+                                android:textColor="#050505"
+                                android:textSize="@dimen/dp_12" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/cart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center_horizontal">
+
+
+
+                            <LinearLayout
+                                android:id="@+id/cartCountLayout"
+                                android:layout_width="@dimen/dp_20"
+                                android:layout_height="@dimen/dp_20"
+
+                                android:layout_marginTop="@dimen/dp_3"
+                                android:layout_marginLeft="@dimen/dp_50"
+                                android:background="@drawable/circle">
+                                <TextView
+                                    android:id="@+id/cartCount"
+                                    android:layout_width="@dimen/dp_20"
+                                    android:layout_height="@dimen/dp_20"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/dp_3"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/dp_10"
+                                    android:textColor="@color/white"
+                                    android:text="10"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:tint="@color/colorPrimary"
+                                android:id="@+id/cartIcon"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="@dimen/dp_25"
+                                android:layout_marginTop="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_25"
+                                android:src="@drawable/cart" />
+
+                            <TextView
+                                android:id="@+id/cartTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cart"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="3dp"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="#050505"
+                                android:textSize="@dimen/dp_12" />
+
+                            <LinearLayout
+                                android:id="@+id/cartBar"
+                                android:layout_marginBottom="@dimen/dp_5"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_3"
+                                android:orientation="horizontal" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/order"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/orderBar"
+                                android:layout_marginBottom="@dimen/dp_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_3"
+                                android:orientation="horizontal" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+                            <ImageView
+                                android:tint="@color/colorPrimary"
+                                android:id="@+id/orderIcon"
+                                android:layout_width="@dimen/dp_25"
+                                android:layout_height="@dimen/dp_25"
+                                android:src="@drawable/order_icon" />
+
+                            <TextView
+                                android:id="@+id/orderTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:text="Order"
+                                android:textColor="#050505"
+                                android:textSize="@dimen/dp_12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/profile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/profileBar"
+                                android:layout_marginBottom="@dimen/dp_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_3"
+                                android:orientation="horizontal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:tint="@color/colorPrimary"
+                                android:id="@+id/profileIcon"
+                                android:layout_width="@dimen/dp_25"
+                                android:layout_height="@dimen/dp_25"
+                                android:src="@drawable/profile" />
+
+                            <TextView
+                                android:id="@+id/profileTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:text="Profile"
+                                android:textColor="#050505"
+                                android:textSize="@dimen/dp_12" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

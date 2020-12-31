@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/detailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/dp_5"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_height="@dimen/dp_60">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:src="@drawable/user"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_height="wrap_content">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:orientation="vertical"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:id="@+id/name"
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:textSize="@dimen/dp_18"
+                               android:textColor="@color/black"
+                               android:text="Shadab Azam Farooqui"/>
+
+
+                           <TextView
+                               android:id="@+id/mobile"
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:visibility="gone"
+                               android:textColor="@color/black"
+                               android:text="Shadab Azam Farooqui"/>
+
+                       </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/call"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/circle"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/call"
+                                android:tint="@color/white"
+                                android:layout_width="@dimen/dp_20"
+                                android:layout_height="@dimen/dp_20"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/waiting"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/waitingImg"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/success"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="Waiting for confirmation from MOM Chef"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:id="@+id/accepted"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/acceptedImg"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/success"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="Accepted! Your food is being prepared"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:id="@+id/assigned"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/assignedImg"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/success"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="Your order has been assigned"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:id="@+id/onWay"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/onWayImg"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/success"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="Your order is on the way"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

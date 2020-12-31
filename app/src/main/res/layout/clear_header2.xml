@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical">
+       <ImageView
+           android:layout_width="@dimen/dp_40"
+           android:layout_height="@dimen/dp_40"
+           android:layout_marginLeft="@dimen/dp_20"
+           android:src="@drawable/cart_alert"/>
+
+
+       <TextView
+           android:id="@+id/footer_close_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/dp_10"
+           android:layout_marginRight="@dimen/dp_40"
+           android:text="You can only order items from one menu at a time?"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_marginTop="@dimen/dp_10"
+           android:layout_marginBottom="@dimen/dp_10"
+           android:layout_marginLeft="@dimen/dp_10"
+           android:textSize="@dimen/text_size_18"/>
+
+   </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:text="Clear your basket if you'd still like to order this time"
+        />
+</LinearLayout>
+
